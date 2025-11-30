@@ -1,5 +1,5 @@
 {% set name = "pylstraight" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 {% set python_min = "3.9" %}
 
 package:
