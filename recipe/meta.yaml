@@ -1,5 +1,5 @@
 {% set name = "pylstraight" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylstraight-{{ version }}.tar.gz
-  sha256: 0743006c25af482f6d80e4b6a5379540dc60d6866f0cc9fec66386cd521244c7
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pylstraight-{{ version }}.tar.gz
+  sha256: 24b5c7fb2c3d14979133e2fb31c75007d3f8b7a9b237dec9ff2591085d7605a2
 
 build:
   noarch: python
