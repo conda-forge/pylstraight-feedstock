@@ -17,10 +17,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24738&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pylstraight-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/pylstraight-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/pylstraight-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -43,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pylstraight` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pylstraight
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pylstraight
 ```
 
-It is possible to list all of the versions of `pylstraight` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pylstraight
+# for installing globally
+pixi global install pylstraight
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pylstraight` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pylstraight --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pylstraight --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pylstraight --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -79,6 +122,8 @@ mamba repoquery whoneeds pylstraight --channel conda-forge
 # List dependencies of `pylstraight`:
 mamba repoquery depends pylstraight --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
