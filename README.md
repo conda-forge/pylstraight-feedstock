@@ -11,7 +11,7 @@ Summary: An unofficial Python reimplementation of the legacy-STRAIGHT
 
 Development: https://github.com/takenori-y/pylstraight
 
-Documentation: https://takenori-y.github.io/pylstraight/latest
+Documentation: https://takenori-y.github.io/pylstraight/stable
 
 Current build status
 ====================
